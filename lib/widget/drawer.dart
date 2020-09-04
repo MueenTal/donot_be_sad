@@ -5,6 +5,7 @@ import 'package:donot_be_sad/pages/doaa.dart';
 import 'package:donot_be_sad/pages/khwater.dart';
 import 'package:donot_be_sad/pages/video_sad.dart';
 import 'package:donot_be_sad/pages/who_us.dart';
+import 'package:donot_be_sad/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -43,60 +44,25 @@ class Drawerr extends StatelessWidget {
               ],
             ))),
         CustomListTitle("assets/icons/sad.png", " لكل مهموم   ", () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => VideoSAd(),
-            ),
-          );
+          Navigator.push(context, SliderB(widget: VideoSAd()));
         }),
         CustomListTitle("assets/icons/morning.png", "   أذكار الصباح     ", () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => AzkarMorning(),
-            ),
-          );
+          Navigator.push(context, SliderB(widget: AzkarMorning()));
         }),
         CustomListTitle("assets/icons/night.png", "    أذكار المساء     ", () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => AzkarNight(),
-            ),
-          );
+          Navigator.push(context, SliderB(widget: AzkarNight()));
         }),
         CustomListTitle("assets/images/aaa.png", "    أدعية      ", () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => Doaa(),
-            ),
-          );
+          Navigator.push(context, SliderB(widget: Doaa()));
         }),
         CustomListTitle("assets/icons/sebha.png", "    مسبحة      ", () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => ChooseSebha(),
-            ),
-          );
+          Navigator.push(context, SliderB(widget: ChooseSebha()));
         }),
         CustomListTitle("assets/icons/allah.png", "   خواطر    ", () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => Khwater(),
-            ),
-          );
+          Navigator.push(context, SliderB(widget: Khwater()));
         }),
         CustomListTitleP(Icons.info, "  من نحن  ", () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => WhoUS(),
-            ),
-          );
+          Navigator.push(context, SliderB(widget: WhoUS()));
         }),
         CustomListTitleP(Icons.share, "مشاركة التطبيق", () {
           Share.share(

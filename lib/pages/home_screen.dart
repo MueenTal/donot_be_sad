@@ -4,6 +4,7 @@ import 'package:donot_be_sad/pages/choose_sebha.dart';
 import 'package:donot_be_sad/pages/doaa.dart';
 import 'package:donot_be_sad/pages/khwater.dart';
 import 'package:donot_be_sad/pages/video_sad.dart';
+import 'package:donot_be_sad/routes/routes.dart';
 import 'package:donot_be_sad/widget/drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -89,11 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: FlatButton(
                                   onPressed: () {
                                     Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => VideoSAd(),
-                                      ),
-                                    );
+                                        context, SliderU(widget: VideoSAd()));
                                   },
                                   child: Center(
                                     child: Text(
@@ -126,12 +123,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                     MediaQuery.of(context).size.width / 2 - 28,
                                 child: FlatButton(
                                   onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => AzkarMorning(),
-                                      ),
-                                    );
+                                    Navigator.push(context,
+                                        SliderU(widget: AzkarMorning()));
                                   },
                                   child: Center(
                                     child: Text(
@@ -176,11 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: FlatButton(
                                   onPressed: () {
                                     Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => AzkarNight(),
-                                      ),
-                                    );
+                                        context, SliderU(widget: AzkarNight()));
                                   },
                                   child: Center(
                                     child: Text(
@@ -214,11 +203,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: FlatButton(
                                   onPressed: () {
                                     Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => Doaa(),
-                                      ),
-                                    );
+                                        context, SliderU(widget: Doaa()));
                                   },
                                   child: Center(
                                     child: Text(
@@ -262,12 +247,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                     MediaQuery.of(context).size.width / 2 - 28,
                                 child: FlatButton(
                                   onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => ChooseSebha(),
-                                      ),
-                                    );
+                                    Navigator.push(context,
+                                        SliderU(widget: ChooseSebha()));
                                   },
                                   child: Center(
                                     child: Text(
@@ -301,11 +282,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 child: FlatButton(
                                   onPressed: () {
                                     Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => Khwater(),
-                                      ),
-                                    );
+                                        context, SliderU(widget: Khwater()));
                                   },
                                   child: Center(
                                     child: Text(

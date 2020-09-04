@@ -1,3 +1,4 @@
+import 'package:donot_be_sad/routes/fadeAnimation.dart';
 import 'package:donot_be_sad/widget/azkar.dart';
 import 'package:donot_be_sad/widget/data_source.dart';
 import 'package:flutter/material.dart';
@@ -36,10 +37,13 @@ class _AzkarMorningState extends State<AzkarMorning> {
             ListView.builder(
               itemCount: DataSource.azkarsbah.length,
               itemBuilder: (context, index) {
-                return Azkar(
-                  body1: DataSource.azkarsbah[index]['body1'],
-                  body2: DataSource.azkarsbah[index]['body2'],
-                  numu: DataSource.azkarsbah[index]['num'],
+                return FadeAnimationa(
+                  1,
+                  Azkar(
+                    body1: DataSource.azkarsbah[index]['body1'],
+                    body2: DataSource.azkarsbah[index]['body2'],
+                    numu: DataSource.azkarsbah[index]['num'],
+                  ),
                 );
               },
             )

@@ -1,4 +1,6 @@
+import 'package:donot_be_sad/pages/doaa.dart';
 import 'package:donot_be_sad/pages/sebha.dart';
+import 'package:donot_be_sad/routes/routes.dart';
 import 'package:flutter/material.dart';
 
 class ChooseSebha extends StatefulWidget {
@@ -138,73 +140,89 @@ class _ChooseSebhaState extends State<ChooseSebha> {
       case '1':
         Navigator.pushReplacement(
             context,
-            MaterialPageRoute(
-                builder: (context) => Sebha(
-                      sebha: "استغغر الله",
-                    )));
+            SliderA(
+                widget: Sebha(
+              sebha: "استغغر الله",
+            )));
+
+        // sebha: "استغغر الله",
 
         break;
       case '2':
         Navigator.pushReplacement(
             context,
-            MaterialPageRoute(
-                builder: (context) => Sebha(
-                      sebha: "الحمد لله ",
-                    )));
+            SliderA(
+                widget: Sebha(
+              sebha: "الحمد لله ",
+            )));
+
+//                                          sebha: "الحمد لله ",
 
         break;
       case '3':
         Navigator.pushReplacement(
             context,
-            MaterialPageRoute(
-                builder: (context) => Sebha(
-                      sebha: "الله أكبر ",
-                    )));
+            SliderA(
+                widget: Sebha(
+              sebha: "الله أكبر ",
+            )));
+
+        //                      sebha: "الله أكبر ",
 
         break;
       case '4':
         Navigator.pushReplacement(
             context,
-            MaterialPageRoute(
-                builder: (context) => Sebha(
-                      sebha: " لا اله الا الله ",
-                    )));
+            SliderA(
+                widget: Sebha(
+              sebha: " لا اله الا الله ",
+            )));
+
+        //                      sebha: " لا اله الا الله ",
 
         break;
       case '5':
         Navigator.pushReplacement(
             context,
-            MaterialPageRoute(
-                builder: (context) => Sebha(
-                      sebha: " استغفر الله وأتوب اليه ",
-                    )));
+            SliderA(
+                widget: Sebha(
+              sebha: " استغفر الله وأتوب اليه ",
+            )));
+
+        //                      sebha: " استغفر الله وأتوب اليه ",
 
         break;
       case '6':
         Navigator.pushReplacement(
             context,
-            MaterialPageRoute(
-                builder: (context) => Sebha(
-                      sebha: " اللهم صلي على سيدنا محمد",
-                    )));
+            SliderA(
+                widget: Sebha(
+              sebha: " اللهم صلي على سيدنا محمد",
+            )));
+
+        //      sebha: " اللهم صلي على سيدنا محمد",
 
         break;
       case '7':
         Navigator.pushReplacement(
             context,
-            MaterialPageRoute(
-                builder: (context) => Sebha(
-                      sebha: "  لا حول ولا قوة إلا بالله   ",
-                    )));
+            SliderA(
+                widget: Sebha(
+              sebha: "  لا حول ولا قوة إلا بالله   ",
+            )));
+
+        //                      sebha: "  لا حول ولا قوة إلا بالله   ",
 
         break;
       case '8':
         Navigator.pushReplacement(
             context,
-            MaterialPageRoute(
-                builder: (context) => Sebha(
-                      sebha: " لا إله إلا أنت سبحانك اني كنت من الظالمين ",
-                    )));
+            SliderA(
+                widget: Sebha(
+              sebha: " لا إله إلا أنت سبحانك اني كنت من الظالمين ",
+            )));
+
+        //                      sebha: " لا إله إلا أنت سبحانك اني كنت من الظالمين ",
 
         break;
     }

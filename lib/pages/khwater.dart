@@ -1,3 +1,4 @@
+import 'package:donot_be_sad/routes/fadeAnimation.dart';
 import 'package:donot_be_sad/widget/data_source.dart';
 import 'package:flutter/material.dart';
 
@@ -32,11 +33,16 @@ class _KhwaterState extends State<Khwater> {
                   Colors.teal.shade500,
                 ])),
               ),
-              ListView.builder(
-                  itemCount: DataSource.khwater.length,
-                  itemBuilder: (context, index) {
-                    return khwaters(DataSource.khwater[index]['body'], context);
-                  })
+              Container(
+                child: ListView.builder(
+                    itemCount: DataSource.khwater.length,
+                    itemBuilder: (context, index) {
+                      return FadeAnimationa(
+                        1,
+                        khwaters(DataSource.khwater[index]['body'], context),
+                      );
+                    }),
+              )
             ],
           ),
         ));

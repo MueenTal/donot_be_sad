@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:donot_be_sad/msg.dart';
 import 'package:flutter/material.dart';
 
 import 'home_screen.dart';
@@ -18,8 +19,12 @@ class _SplashScreenState extends State<SplashScreen> {
             builder: (BuildContext context) => HomeScreen())));
   }
 
+  final FBM _fbm = new FBM();
+
   @override
   void initState() {
+    _fbm.conf();
+
     _loadSlpash();
 
     super.initState();
