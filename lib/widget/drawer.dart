@@ -4,13 +4,21 @@ import 'package:donot_be_sad/pages/choose_sebha.dart';
 import 'package:donot_be_sad/pages/doaa.dart';
 import 'package:donot_be_sad/pages/khwater.dart';
 import 'package:donot_be_sad/pages/video_sad.dart';
-import 'package:donot_be_sad/pages/who_us.dart';
 import 'package:donot_be_sad/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Drawerr extends StatelessWidget {
+  _launchURL() async {
+    const url = 'mailto:mueental2020@gmail.com?subject=تطبيق لا تحزن&body=';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -61,9 +69,7 @@ class Drawerr extends StatelessWidget {
         CustomListTitle("assets/icons/allah.png", "   خواطر    ", () {
           Navigator.push(context, SliderB(widget: Khwater()));
         }),
-        CustomListTitleP(Icons.info, "  من نحن  ", () {
-          Navigator.push(context, SliderB(widget: WhoUS()));
-        }),
+        CustomListTitleP(Icons.email, "  تواصل معنا   ", _launchURL),
         CustomListTitleP(Icons.share, "مشاركة التطبيق", () {
           Share.share(
               ' تطبيق لا تحزن   https://play.google.com/store/apps/details?id=com.talapps.dont_be_sad',
