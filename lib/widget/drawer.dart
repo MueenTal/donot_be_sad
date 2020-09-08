@@ -10,14 +10,14 @@ import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Drawerr extends StatelessWidget {
-  _launchURL() async {
-    const url = 'mailto:mueental2020@gmail.com?subject=تطبيق لا تحزن&body=';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
-  }
+  // _launchURL() async {
+  //   const url = 'mailto:mueentalla01@gmail.com?subject=تطبيق لا تحزن&body=';
+  //   if (await canLaunch(url)) {
+  //     await launch(url);
+  //   } else {
+  //     throw 'Could not launch $url';
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +69,7 @@ class Drawerr extends StatelessWidget {
         CustomListTitle("assets/icons/allah.png", "   خواطر    ", () {
           Navigator.push(context, SliderB(widget: Khwater()));
         }),
-        CustomListTitleP(Icons.email, "  تواصل معنا   ", _launchURL),
+        // CustomListTitleP(Icons.email, "  تواصل معنا   ", _launchURL),
         CustomListTitleP(Icons.share, "مشاركة التطبيق", () {
           Share.share(
               ' تطبيق لا تحزن   https://play.google.com/store/apps/details?id=com.talapps.dont_be_sad',
@@ -80,7 +80,7 @@ class Drawerr extends StatelessWidget {
           "   تقييم التطبيق   ",
           () async {
             const url =
-                'https://play.google.com/store/apps/details?id=com.talapps.dont_be_sad';
+                'https://play.google.com/store/apps/details?id=com.talapps.donot_be_sad';
             if (await canLaunch(url)) {
               await launch(url);
             } else {

@@ -28,7 +28,7 @@ class _AzkarState extends State<Azkar> {
         setState(() {
           if (num == 0) {
             Fluttertoast.showToast(
-                msg: "لقد انتهيت من هذه ",
+                msg: " تم الانتهاء من هذا؛ في ميزان حسناتك ",
                 toastLength: Toast.LENGTH_SHORT,
                 gravity: ToastGravity.BOTTOM,
                 timeInSecForIosWeb: 1,
@@ -38,7 +38,7 @@ class _AzkarState extends State<Azkar> {
           } else if (num == 1) {
             num--;
             Fluttertoast.showToast(
-                msg: "لقد انتهيت من هذه ",
+                msg: "تم الانتهاء من هذا؛ في ميزان حسناتك    ",
                 toastLength: Toast.LENGTH_SHORT,
                 gravity: ToastGravity.BOTTOM,
                 timeInSecForIosWeb: 1,
